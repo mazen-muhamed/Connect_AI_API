@@ -1,8 +1,15 @@
 import os
+from fastapi import FastAPI
+from src.connect_to_ai_api.routers.triage import router as triage_router
 from openai import OpenAI
 from dotenv import load_dotenv
 
 load_dotenv()
+
+
+app = FastAPI()
+app.include_router(triage_router)
+
 
 client = OpenAI(
     base_url=os.environ["LLM_BASE_URL"],   
