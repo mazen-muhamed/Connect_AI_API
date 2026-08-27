@@ -10,7 +10,7 @@ from .schema import TriageOutput
 load_dotenv()
 
 STUB_RESPONSE = TriageOutput(
-    category="banana",  
+    category="other",
     urgency="low",
     confidence=0.0,
     reason="Stub mode: no model call made.",
