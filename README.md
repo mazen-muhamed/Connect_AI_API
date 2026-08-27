@@ -25,3 +25,4 @@ return category "other" with low confidence (< 0.5), not a guess
 
 
 ![alt text](Screenshot_20260827_212930.png)
+![alt text](image.png)
